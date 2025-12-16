@@ -1,41 +1,11 @@
 import React from 'react';
-import Tilt from 'react-parallax-tilt';
 import { motion } from 'framer-motion';
 
 import { styles } from '../styles';
-import { sketches } from '../constants';
+import { pricingSections } from '../constants';
 import { SectionWrapper } from '../hoc';
 import { fadeIn, textVariant } from '../utils/motion';
-
-const ServiceCard = ({ index, image, link }) => (
-  <Tilt className='xs:w-[350px] w-full'>
-    <motion.div
-      variants={fadeIn('right', 'spring', index * 0.5, 0.75)}
-      className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
-    >
-      <a
-        href={link}
-        target='_blank'
-        rel='noopener noreferrer'
-        className='w-full h-full'
-      >
-        <div
-          options={{
-            max: 45,
-            scale: 1,
-            speed: 450,
-          }}
-          className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[380px] flex justify-center items-center'
-          style={{
-            backgroundImage: `url(${image})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-          }}
-        ></div>
-      </a>
-    </motion.div>
-  </Tilt>
-);
+import PricingSection from './PricingSection';
 
 const Pricing = () => {
   return (
@@ -54,9 +24,16 @@ const Pricing = () => {
         some of my favorite creations.
       </motion.p>
 
-      <div className='mt-20 flex flex-wrap gap-10'>
-        {sketches.map((sketch, index) => (
-          <ServiceCard key={sketch.title} index={index} {...sketch} />
+      <div className='mt-20 flex flex-col gap-16'>
+        {pricingSections.map((section, index) => (
+          <PricingSection
+            key={section.title}
+            index={index}
+            title={section.title}
+            price={section.price}
+            description={section.description}
+            images={section.images}
+          />
         ))}
       </div>
     </>

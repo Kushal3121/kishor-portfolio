@@ -64,21 +64,32 @@ const services = [
   },
 ];
 
-const sketches = [
+// Pricing sections for artwork categories
+const pricingSections = [
   {
-    title: 'The Lady',
-    image: horse,
-    link: 'https://www.instagram.com/artxiac/p/Cu4lnXqqj7v/?img_index=1',
+    title: 'Full Body',
+    price: '$80+',
+    description: 'Detailed full-body illustration with optional background.',
+    images: [horse, falcon, the_lady, horse, falcon, the_lady],
   },
   {
-    title: 'React Native Developer',
-    image: falcon,
-    link: 'https://www.instagram.com/p/CQEN1uVLGcr/',
+    title: 'Half Body',
+    price: '$60+',
+    description: 'From head to waist, clean rendering and shading.',
+    images: [the_lady, horse, falcon, the_lady, horse, falcon],
   },
   {
-    title: 'Backend Developer',
-    image: the_lady,
-    link: 'https://www.instagram.com/p/C4nt-EkyCea/?img_index=1',
+    title: 'Bust / Portrait',
+    price: '$40+',
+    description: 'Head and shoulders portrait with focus on expression.',
+    images: [falcon, the_lady, horse, falcon, the_lady, horse],
+  },
+  // Optional custom section
+  {
+    title: 'Custom',
+    price: 'Varies',
+    description: 'Tell me your idea — backgrounds, props, pets, couples, more.',
+    images: [the_lady, horse, falcon],
   },
 ];
 
@@ -326,7 +337,7 @@ const projects = [
 
 export {
   services,
-  sketches,
+  pricingSections,
   technologies,
   experiences,
   publications,
