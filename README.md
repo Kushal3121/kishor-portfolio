@@ -1,5 +1,5 @@
 Welcome to my personal portfolio!
 
-This project showcases my skills, projects, and professional journey as a software developer.
+This project showcases my skills, projects, and professional journey as a animation artist.
 
-Deployed version - https://kushxal-portfolio.netlify.app/
+Deployed version -
