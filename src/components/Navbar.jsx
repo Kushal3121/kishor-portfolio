@@ -48,7 +48,7 @@ const Navbar = () => {
             className='w-7 h-7 object-contain rounded-full'
           />
           <p className='text-white text-[18px] font-bold cursor-pointer flex '>
-            Kushal Choudhary &nbsp;
+            Kishor Choudhary &nbsp;
           </p>
         </Link>
 

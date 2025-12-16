@@ -42,7 +42,7 @@ const Footer = () => {
         variants={fadeIn('', '', 0.1, 1)}
         className='text-center mt-6 text-secondary text-[14px]'
       >
-        <p>&copy; {new Date().getFullYear()} Kushal. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Kishor. All rights reserved.</p>
       </motion.div>
     </div>
   );

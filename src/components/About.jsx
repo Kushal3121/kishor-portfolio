@@ -44,7 +44,7 @@ const About = () => {
       </motion.div> */}
 
       <h1 className={`${styles.heroHeadText} text-white mt-14`}>
-        Hi, I'm <span className='text-[#915EFF]'>Kushal</span>
+        Hi, I'm <span className='text-[#915EFF]'>Kishor</span>
       </h1>
 
       <motion.p
