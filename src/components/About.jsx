@@ -44,7 +44,7 @@ const About = () => {
         <h2 className={styles.sectionHeadText}>Overview</h2>
       </motion.div> */}
 
-      <div className='mt-6'>
+      <div className='pt-12 sm:pt-20'>
         <ProfileCard />
       </div>
 

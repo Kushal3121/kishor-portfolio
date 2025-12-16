@@ -11,7 +11,7 @@ const Pricing = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Creative Pursuits</p>
+        {/* <p className={styles.sectionSubText}>Creative Pursuits</p> */}
         <h2 className={styles.sectionHeadText}>Pricing</h2>
       </motion.div>
 

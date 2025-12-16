@@ -8,6 +8,9 @@ import {
   FaEnvelope,
   FaCheckCircle,
   FaPalette,
+  FaDollarSign,
+  FaClock,
+  FaMapMarkerAlt,
 } from 'react-icons/fa';
 import { logo } from '../assets';
 
@@ -87,6 +90,63 @@ const ProfileCard = () => {
               Fast drafts, clean linework, and reliable on-time delivery.
             </p>
           </div>
+        </div>
+
+        {/* Commission tiers */}
+        <div className='mt-6 grid grid-cols-1 sm:grid-cols-3 gap-4 w-full'>
+          <div className='rounded-xl bg-white/5 border border-white/10 p-4 flex items-center justify-between'>
+            <div className='flex items-center gap-2'>
+              <FaDollarSign className='text-green-400' />
+              <span className='text-white text-sm'>Portrait</span>
+            </div>
+            <span className='text-xs text-white/80 bg-white/10 px-2 py-1 rounded-full'>
+              $40+
+            </span>
+          </div>
+          <div className='rounded-xl bg-white/5 border border-white/10 p-4 flex items-center justify-between'>
+            <div className='flex items-center gap-2'>
+              <FaDollarSign className='text-green-400' />
+              <span className='text-white text-sm'>Half Body</span>
+            </div>
+            <span className='text-xs text-white/80 bg-white/10 px-2 py-1 rounded-full'>
+              $60+
+            </span>
+          </div>
+          <div className='rounded-xl bg-white/5 border border-white/10 p-4 flex items-center justify-between'>
+            <div className='flex items-center gap-2'>
+              <FaDollarSign className='text-green-400' />
+              <span className='text-white text-sm'>Full Body</span>
+            </div>
+            <span className='text-xs text-white/80 bg-white/10 px-2 py-1 rounded-full'>
+              $80+
+            </span>
+          </div>
+        </div>
+
+        {/* Quick meta */}
+        <div className='mt-4 flex flex-wrap items-center gap-3 text-white/80'>
+          <span className='inline-flex items-center gap-2 text-xs bg-white/5 border border-white/10 px-3 py-1 rounded-full'>
+            <FaClock /> 3–7 day turnaround
+          </span>
+          <span className='inline-flex items-center gap-2 text-xs bg-white/5 border border-white/10 px-3 py-1 rounded-full'>
+            <FaMapMarkerAlt /> Dallas, TX
+          </span>
+        </div>
+
+        {/* CTAs */}
+        <div className='mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4 w-full'>
+          <a
+            href='#pricing'
+            className='w-full text-center rounded-xl bg-gradient-to-r from-pink-500 to-purple-600 text-white py-3 font-medium shadow'
+          >
+            View Pricing
+          </a>
+          <a
+            href='#contact'
+            className='w-full text-center rounded-xl bg-white/10 hover:bg-white/20 text-white py-3 font-medium border border-white/10'
+          >
+            Contact
+          </a>
         </div>
 
         {/* Links */}
