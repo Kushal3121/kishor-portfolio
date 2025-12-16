@@ -58,7 +58,7 @@ const ProfileCard = () => {
             </h2>
             <p className='text-secondary mt-1 flex items-center gap-2'>
               <FaPalette className='text-purple-400' />
-              Animation Artist • Illustrator
+              Character Artist • Illustrator
             </p>
 
             {/* Availability badge */}
