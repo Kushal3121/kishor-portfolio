@@ -11,7 +11,7 @@ import Tech from './Tech';
 import Experience from './Experience';
 import Works from './Works';
 import Publications from './Publications';
-import Hobbies from './Hobbies';
+import Pricing from './Pricing';
 import Contact from './Contact';
 import CanvasLoader from './Loader';
 import Footer from './Footer';
@@ -24,7 +24,7 @@ export {
   Experience,
   Works,
   Publications,
-  Hobbies,
+  Pricing,
   Contact,
   Footer,
   CanvasLoader,

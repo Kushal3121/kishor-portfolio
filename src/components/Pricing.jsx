@@ -37,12 +37,12 @@ const ServiceCard = ({ index, image, link }) => (
   </Tilt>
 );
 
-const Hobbies = () => {
+const Pricing = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Creative Pursuits</p>
-        <h2 className={styles.sectionHeadText}>Hobbies</h2>
+        <h2 className={styles.sectionHeadText}>Pricing</h2>
       </motion.div>
 
       <motion.p
@@ -63,4 +63,4 @@ const Hobbies = () => {
   );
 };
 
-export default SectionWrapper(Hobbies, '');
+export default SectionWrapper(Pricing, 'pricing');
