@@ -6,6 +6,7 @@ import { styles } from '../styles';
 import { services } from '../constants';
 import { SectionWrapper } from '../hoc';
 import { fadeIn, textVariant } from '../utils/motion';
+import ProfileCard from './ProfileCard';
 
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt className='xs:w-[250px] w-full'>
@@ -43,30 +44,15 @@ const About = () => {
         <h2 className={styles.sectionHeadText}>Overview</h2>
       </motion.div> */}
 
-      <h1 className={`${styles.heroHeadText} text-white mt-14`}>
-        Hi, I'm <span className='text-[#915EFF]'>Kishor</span>
-      </h1>
+      <div className='mt-6'>
+        <ProfileCard />
+      </div>
 
-      <motion.p
-        variants={fadeIn('', '', 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] text-justify'
-      >
-        I am a Master’s student in Computer Science at UT Dallas with a
-        background in Information Technology and Data Science. I specialize in
-        full-stack development, cloud computing, and applied AI/ML, and have
-        worked on projects and internships spanning scalable platforms,
-        enterprise systems, and intelligent solutions. My experience includes
-        applying modern technologies like React, Node.js, Python, and AWS to
-        deliver robust, user-centric products. I am driven to create impactful
-        technologies that enhance user experience, optimize performance, and
-        solve complex real-world challenges.
-      </motion.p>
-
-      <div className='mt-20 flex flex-wrap gap-10'>
+      {/* <div className='mt-20 flex flex-wrap gap-10'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
-      </div>
+      </div> */}
     </>
   );
 };
