@@ -61,7 +61,7 @@ const ProfileCard = () => {
             </h2>
             <p className='text-secondary mt-1 flex items-center gap-2'>
               <FaPalette className='text-purple-400' />
-              Character Artist • Illustrator
+              3D Character Artist
             </p>
 
             {/* Availability badge */}
@@ -76,40 +76,31 @@ const ProfileCard = () => {
         <div className='my-6 h-px bg-white/10' />
 
         {/* Highlights */}
-        <div className='flex flex-col gap-3 text-white/90 max-w-2xl'>
+        <div className='flex flex-col gap-3 text-white/90 max-w-3xl'>
           <div className='flex items-start gap-2'>
             <FaCheckCircle className='mt-0.5 text-green-400' />
             <p className='text-sm sm:text-[15px]'>
-              Expressive portraits and stylized full-body compositions with
-              strong character appeal.
+              Custom 3D character sculpts for 3D printing, including stylized,
+              cartoon, and semi-realistic styles.
             </p>
           </div>
           <div className='flex items-start gap-2'>
             <FaCheckCircle className='mt-0.5 text-green-400' />
             <p className='text-sm sm:text-[15px]'>
-              Fast drafts, clean linework, and reliable on-time delivery.
+              Fully custom designs based on your ideas, references, or concepts.
             </p>
           </div>
         </div>
 
         {/* Commission tiers */}
-        <div className='mt-6 grid grid-cols-1 sm:grid-cols-3 gap-4 w-full'>
-          <div className='rounded-xl bg-white/5 border border-white/10 p-4 flex items-center justify-between'>
-            <div className='flex items-center gap-2'>
-              <FaDollarSign className='text-green-400' />
-              <span className='text-white text-sm'>Portrait</span>
-            </div>
-            <span className='text-xs text-white/80 bg-white/10 px-2 py-1 rounded-full'>
-              $40+
-            </span>
-          </div>
+        <div className='mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4 w-full'>
           <div className='rounded-xl bg-white/5 border border-white/10 p-4 flex items-center justify-between'>
             <div className='flex items-center gap-2'>
               <FaDollarSign className='text-green-400' />
               <span className='text-white text-sm'>Half Body</span>
             </div>
             <span className='text-xs text-white/80 bg-white/10 px-2 py-1 rounded-full'>
-              $60+
+              $100+
             </span>
           </div>
           <div className='rounded-xl bg-white/5 border border-white/10 p-4 flex items-center justify-between'>
@@ -118,7 +109,7 @@ const ProfileCard = () => {
               <span className='text-white text-sm'>Full Body</span>
             </div>
             <span className='text-xs text-white/80 bg-white/10 px-2 py-1 rounded-full'>
-              $80+
+              $150+
             </span>
           </div>
         </div>
@@ -126,7 +117,7 @@ const ProfileCard = () => {
         {/* Quick meta */}
         <div className='mt-4 flex flex-wrap items-center gap-3 text-white/80'>
           <span className='inline-flex items-center gap-2 text-xs bg-white/5 border border-white/10 px-3 py-1 rounded-full'>
-            <FaClock /> 3–7 day turnaround
+            <FaClock /> Response time: 1-2 days
           </span>
           <span className='inline-flex items-center gap-2 text-xs bg-white/5 border border-white/10 px-3 py-1 rounded-full'>
             <FaMapMarkerAlt /> Dallas, TX
