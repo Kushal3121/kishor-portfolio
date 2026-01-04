@@ -7,6 +7,7 @@ import {
   Experience,
   Publications,
   Pricing,
+  CommissionInfo,
   Hero,
   Navbar,
   Tech,
@@ -76,6 +77,7 @@ const App = () => {
         {/* <Works /> */}
         {/* <Publications /> */}
         <Pricing />
+        <CommissionInfo />
         <div className='relative z-0'>
           <Contact />
           <StarsCanvas />
