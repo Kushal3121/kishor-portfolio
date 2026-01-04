@@ -69,13 +69,15 @@ const pricingSections = [
   {
     title: 'Half Body',
     price: '$100+',
-    description: 'From head to waist, clean rendering and shading.',
+    description:
+      'Upper-body 3D character sculpt from head to the upper thighs focusing on pose, anatomy and clothing.',
     images: [the_lady, horse, falcon, the_lady, horse, falcon],
   },
   {
     title: 'Full Body',
     price: '$150+',
-    description: 'Detailed full-body illustration with optional background.',
+    description:
+      'Complete full-body 3D character sculpt from head to feet, including pose and overall proportions.',
     images: [horse, falcon, the_lady, horse, falcon, the_lady],
   },
   // {
