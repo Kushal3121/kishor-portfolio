@@ -3,14 +3,14 @@ import { motion } from 'framer-motion';
 import { fadeIn } from '../utils/motion';
 import {
   FaInstagram,
-  FaGithub,
   FaLinkedin,
-  FaEnvelope,
   FaCheckCircle,
   FaPalette,
   FaDollarSign,
   FaClock,
   FaMapMarkerAlt,
+  FaTwitter,
+  FaArtstation,
 } from 'react-icons/fa';
 import { logo } from '../assets';
 
@@ -143,24 +143,24 @@ const ProfileCard = () => {
         {/* Links */}
         <div className='mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4 w-full'>
           <LinkItem
-            href='https://www.linkedin.com/in/kushal-choudhary-a0a874196/'
-            icon={FaLinkedin}
-            label='LinkedIn'
+            href='https://www.artstation.com/kishorc5124'
+            icon={FaArtstation}
+            label='Artstation'
           />
           <LinkItem
-            href='https://github.com/Kushal3121'
-            icon={FaGithub}
-            label='GitHub'
+            href='https://x.com/Kishor_c4?t=gvlHDyvMDwucbxEo7A-3AQ&s=09'
+            icon={FaTwitter}
+            label='Twitter'
           />
           <LinkItem
-            href='https://www.instagram.com/artxiac/'
+            href='https://www.instagram.com/kishor_c4/'
             icon={FaInstagram}
             label='Instagram'
           />
           <LinkItem
-            href='mailto:your-email@example.com'
-            icon={FaEnvelope}
-            label='Email'
+            href='https://www.linkedin.com/in/kishor-choudhary-8514b4251'
+            icon={FaLinkedin}
+            label='LinkedIn'
           />
         </div>
       </div>

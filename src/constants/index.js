@@ -67,30 +67,30 @@ const services = [
 // Pricing sections for artwork categories
 const pricingSections = [
   {
-    title: 'Full Body',
-    price: '$80+',
-    description: 'Detailed full-body illustration with optional background.',
-    images: [horse, falcon, the_lady, horse, falcon, the_lady],
-  },
-  {
     title: 'Half Body',
-    price: '$60+',
+    price: '$100+',
     description: 'From head to waist, clean rendering and shading.',
     images: [the_lady, horse, falcon, the_lady, horse, falcon],
   },
   {
-    title: 'Bust / Portrait',
-    price: '$40+',
-    description: 'Head and shoulders portrait with focus on expression.',
-    images: [falcon, the_lady, horse, falcon, the_lady, horse],
+    title: 'Full Body',
+    price: '$150+',
+    description: 'Detailed full-body illustration with optional background.',
+    images: [horse, falcon, the_lady, horse, falcon, the_lady],
   },
-  // Optional custom section
-  {
-    title: 'Custom',
-    price: 'Varies',
-    description: 'Tell me your idea — backgrounds, props, pets, couples, more.',
-    images: [the_lady, horse, falcon],
-  },
+  // {
+  //   title: 'Bust / Portrait',
+  //   price: '$40+',
+  //   description: 'Head and shoulders portrait with focus on expression.',
+  //   images: [falcon, the_lady, horse, falcon, the_lady, horse],
+  // },
+  // // Optional custom section
+  // {
+  //   title: 'Custom',
+  //   price: 'Varies',
+  //   description: 'Tell me your idea — backgrounds, props, pets, couples, more.',
+  //   images: [the_lady, horse, falcon],
+  // },
 ];
 
 const technologies = [

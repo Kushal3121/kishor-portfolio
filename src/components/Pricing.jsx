@@ -15,14 +15,14 @@ const Pricing = () => {
         <h2 className={styles.sectionHeadText}>Pricing</h2>
       </motion.div>
 
-      <motion.p
+      {/* <motion.p
         variants={fadeIn('', '', 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] text-justify'
       >
         I have a passion for sketching and enjoy exploring various art forms,
         including pencil shading, digital art, and stippling. Below, you'll find
         some of my favorite creations.
-      </motion.p>
+      </motion.p> */}
 
       <div className='mt-20 flex flex-col gap-16'>
         {pricingSections.map((section, index) => (
