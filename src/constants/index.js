@@ -82,18 +82,18 @@ const services = [
 // Pricing sections for artwork categories
 const pricingSections = [
   {
-    title: 'Half Body',
-    price: '$100+',
-    description:
-      'Upper-body 3D character sculpt from head to the upper thighs focusing on pose, anatomy and clothing.',
-    images: [hb1, hb2, hb3, hb4, hb5, hb6, hb7, hb8],
-  },
-  {
     title: 'Full Body',
     price: '$150+',
     description:
       'Complete full-body 3D character sculpt from head to feet, including pose and overall proportions.',
     images: [fb1, fb2, fb3, fb4, fb5, fb6, fb7],
+  },
+  {
+    title: 'Half Body',
+    price: '$100+',
+    description:
+      'Upper-body 3D character sculpt from head to the upper thighs focusing on pose, anatomy and clothing.',
+    images: [hb1, hb2, hb3, hb4, hb5, hb6, hb7, hb8],
   },
   // {
   //   title: 'Bust / Portrait',
