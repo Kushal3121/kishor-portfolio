@@ -41,6 +41,9 @@ import hb2 from './half_body/hb2.png';
 import hb3 from './half_body/hb3.png';
 import hb4 from './half_body/hb4.png';
 import hb5 from './half_body/hb5.png';
+import hb6 from './half_body/hb6.png';
+import hb7 from './half_body/hb7.png';
+import hb8 from './half_body/hb8.png';
 
 import fb1 from './full_body/fb1.jpg';
 import fb2 from './full_body/fb2.png';
@@ -89,6 +92,9 @@ export {
   hb3,
   hb4,
   hb5,
+  hb6,
+  hb7,
+  hb8,
   fb1,
   fb2,
   fb3,
