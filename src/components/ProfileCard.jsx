@@ -119,9 +119,9 @@ const ProfileCard = () => {
           <span className='inline-flex items-center gap-2 text-xs bg-white/5 border border-white/10 px-3 py-1 rounded-full'>
             <FaClock /> Response time: 1-2 days
           </span>
-          <span className='inline-flex items-center gap-2 text-xs bg-white/5 border border-white/10 px-3 py-1 rounded-full'>
+          {/* <span className='inline-flex items-center gap-2 text-xs bg-white/5 border border-white/10 px-3 py-1 rounded-full'>
             <FaMapMarkerAlt /> Dallas, TX
-          </span>
+          </span> */}
         </div>
 
         {/* CTAs */}
