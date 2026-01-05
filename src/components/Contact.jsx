@@ -19,6 +19,12 @@ const Contact = () => {
 
   const [loading, setLoading] = useState(false);
 
+  const isValidEmail = (value) => {
+    const email = String(value || '').trim();
+    // Basic email pattern sufficient for client-side validation
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  };
+
   const handleChange = (e) => {
     const { name, value } = e.target;
 
@@ -30,6 +36,19 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    // Client-side validation for a valid email address
+    if (!isValidEmail(form.email)) {
+      toast.error('Please enter a valid email address.', {
+        position: 'bottom-right',
+        autoClose: 4000,
+        hideProgressBar: true,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+      });
+      return;
+    }
+
     setLoading(true);
 
     emailjs
@@ -102,6 +121,7 @@ const Contact = () => {
               value={form.name}
               onChange={handleChange}
               placeholder="What's your good name?"
+              required
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
@@ -113,6 +133,7 @@ const Contact = () => {
               value={form.email}
               onChange={handleChange}
               placeholder="What's your mail address?"
+              required
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
@@ -124,6 +145,7 @@ const Contact = () => {
               value={form.message}
               onChange={handleChange}
               placeholder='Tell me about your project and any references you have.'
+              required
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
               style={{ resize: 'none' }}
             />
