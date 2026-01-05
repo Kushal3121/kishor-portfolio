@@ -57,7 +57,7 @@ const ProfileCard = () => {
           {/* Name & role */}
           <div className='flex-1'>
             <h2 className='text-white font-extrabold text-[30px] sm:text-[40px] leading-tight'>
-              Kishor
+              Kishor Choudhary
             </h2>
             <p className='text-secondary mt-1 flex items-center gap-2'>
               <FaPalette className='text-purple-400' />

@@ -56,7 +56,7 @@ const CommissionInfo = () => {
             </li>
             <li>
               <span className='font-semibold text-white'>NSFW commissions</span>{' '}
-              include an additional $40 charge.
+              include an additional $50 charge.
             </li>
           </ul>
         </InfoBlock>
