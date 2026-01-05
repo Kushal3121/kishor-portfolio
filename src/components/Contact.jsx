@@ -56,6 +56,8 @@ const Contact = () => {
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         {
+          // Subject and reply-to help surface sender details in the received email
+          subject: `New portfolio inquiry from ${form.name} (${form.email})`,
           from_name: form.name,
           to_name: 'Kishor',
           from_email: form.email,
