@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { createPortal } from 'react-dom';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../utils/motion';
 
@@ -87,6 +88,17 @@ const ImageCarousel = ({ images = [] }) => {
     return () => window.removeEventListener('keydown', onKey);
   }, [previewSrc]);
 
+  // Lock body scroll when preview is open
+  useEffect(() => {
+    if (previewSrc) {
+      const prev = document.body.style.overflow;
+      document.body.style.overflow = 'hidden';
+      return () => {
+        document.body.style.overflow = prev;
+      };
+    }
+  }, [previewSrc]);
+
   useEffect(() => {
     updateScrollButtons();
     const onScroll = () => updateScrollButtons();
@@ -122,35 +134,38 @@ const ImageCarousel = ({ images = [] }) => {
         ))}
       </div>
 
-      {previewSrc ? (
-        <div
-          className='fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4'
-          onClick={() => setPreviewSrc(null)}
-        >
-          <button
-            aria-label='Close preview'
-            className='absolute top-4 right-4 rounded-full bg-white/10 hover:bg-white/20 text-white p-2'
-            onClick={(e) => {
-              e.stopPropagation();
-              setPreviewSrc(null);
-            }}
-          >
-            <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor' className='w-6 h-6'>
-              <path
-                fillRule='evenodd'
-                d='M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z'
-                clipRule='evenodd'
+      {previewSrc
+        ? createPortal(
+            <div
+              className='fixed inset-0 z-[9999] flex items-center justify-center bg-black/80 p-4'
+              onClick={() => setPreviewSrc(null)}
+            >
+              <button
+                aria-label='Close preview'
+                className='absolute top-4 right-4 rounded-full bg-white/10 hover:bg-white/20 text-white p-2'
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setPreviewSrc(null);
+                }}
+              >
+                <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor' className='w-6 h-6'>
+                  <path
+                    fillRule='evenodd'
+                    d='M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z'
+                    clipRule='evenodd'
+                  />
+                </svg>
+              </button>
+              <img
+                src={previewSrc}
+                alt='Preview'
+                className='max-h-[85vh] max-w-[90vw] rounded-lg shadow-2xl'
+                onClick={(e) => e.stopPropagation()}
               />
-            </svg>
-          </button>
-          <img
-            src={previewSrc}
-            alt='Preview'
-            className='max-h-[85vh] max-w-[90vw] rounded-lg shadow-2xl'
-            onClick={(e) => e.stopPropagation()}
-          />
-        </div>
-      ) : null}
+            </div>,
+            document.body
+          )
+        : null}
     </div>
   );
 };
