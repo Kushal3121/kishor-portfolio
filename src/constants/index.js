@@ -28,6 +28,18 @@ import {
   horse,
   falcon,
   banking,
+  hb1,
+  hb2,
+  hb3,
+  hb4,
+  hb5,
+  fb1,
+  fb2,
+  fb3,
+  fb4,
+  fb5,
+  fb6,
+  fb7,
 } from '../assets';
 
 export const navLinks = [
@@ -71,14 +83,14 @@ const pricingSections = [
     price: '$100+',
     description:
       'Upper-body 3D character sculpt from head to the upper thighs focusing on pose, anatomy and clothing.',
-    images: [the_lady, horse, falcon, the_lady, horse, falcon],
+    images: [hb1, hb2, hb3, hb4, hb5],
   },
   {
     title: 'Full Body',
     price: '$150+',
     description:
       'Complete full-body 3D character sculpt from head to feet, including pose and overall proportions.',
-    images: [horse, falcon, the_lady, horse, falcon, the_lady],
+    images: [fb1, fb2, fb3, fb4, fb5, fb6, fb7],
   },
   // {
   //   title: 'Bust / Portrait',

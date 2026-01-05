@@ -36,6 +36,20 @@ import the_lady from './sketches/the_lady.jpg';
 import horse from './sketches/horse.jpg';
 import falcon from './sketches/falcon.jpg';
 
+import hb1 from './half_body/hb1.png';
+import hb2 from './half_body/hb2.png';
+import hb3 from './half_body/hb3.png';
+import hb4 from './half_body/hb4.png';
+import hb5 from './half_body/hb5.png';
+
+import fb1 from './full_body/fb1.jpg';
+import fb2 from './full_body/fb2.png';
+import fb3 from './full_body/fb3.png';
+import fb4 from './full_body/fb4.jpg';
+import fb5 from './full_body/fb5.png';
+import fb6 from './full_body/fb6.png';
+import fb7 from './full_body/fb7.png';
+
 export {
   logo,
   backend,
@@ -70,4 +84,16 @@ export {
   falcon,
   insightgen,
   banking,
+  hb1,
+  hb2,
+  hb3,
+  hb4,
+  hb5,
+  fb1,
+  fb2,
+  fb3,
+  fb4,
+  fb5,
+  fb6,
+  fb7,
 };
