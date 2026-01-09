@@ -5,7 +5,6 @@ import { SectionWrapper } from '../hoc';
 import { fadeIn } from '../utils/motion';
 import {
   FaInstagram,
-  // FaGithub,
   FaLinkedin,
   FaEnvelope,
   FaArtstation,
